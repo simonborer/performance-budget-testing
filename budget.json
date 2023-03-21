@@ -2,7 +2,7 @@
   {
     "path": "/*",
     "options": {
-       "firstPartyHostnames": ["*.my-site.com", "my-site.cdn.com"]
+       "firstPartyHostnames": ["*.performance-budget.netlify.app", "my-site.cdn.com"]
     },
     "timings": [
       {
@@ -33,7 +33,7 @@
   },
   {
     "options": {
-       "firstPartyHostnames": ["*.my-site.com", "my-site.cdn.com"]
+       "firstPartyHostnames": ["*.performance-budget.netlify.app"]
     },
     "path": "/checkout",
     "resourceSizes": [
