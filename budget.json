@@ -1,9 +1,6 @@
 [
   {
     "path": "/*",
-    "options": {
-       "firstPartyHostnames": ["*.performance-budget.netlify.app", "my-site.cdn.com"]
-    },
     "timings": [
       {
         "metric": "interactive",
@@ -17,29 +14,11 @@
     "resourceSizes": [
       {
         "resourceType": "total",
-        "budget": 500
+        "budget": 250
       },
       {
         "resourceType": "script",
         "budget": 150
-      }
-    ],
-    "resourceCounts": [
-      {
-        "resourceType": "third-party",
-        "budget": 100
-      }
-    ]
-  },
-  {
-    "options": {
-       "firstPartyHostnames": ["*.performance-budget.netlify.app"]
-    },
-    "path": "/checkout",
-    "resourceSizes": [
-      {
-        "resourceType": "script",
-        "budget": 200
       }
     ]
   }
