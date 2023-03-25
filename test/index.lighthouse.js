@@ -5,7 +5,7 @@ import { URL } from 'url';
 import { readFile } from 'fs/promises';
 const budget = JSON.parse(
   await readFile(
-    new URL('../budget.json', import.meta.url)
+    new URL('./budget.json', import.meta.url)
   )
 );
 
@@ -33,6 +33,7 @@ export async function performanceBudget() {
 
     const auditResult = lhr['audits']['performance-budget'].details.items.find(element => element.resourceType = "total");
     auditResult.sizeOverBudget = auditResult.sizeOverBudget ?? 0;
+
     await browser.close();
     await server.close();
     return auditResult;
